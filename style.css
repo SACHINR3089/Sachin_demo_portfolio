@@ -1,0 +1,127 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+center {
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0056b3;
+}
+
+h1.top-left-title {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    margin: 0;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+p.left-paragraph {
+    position: absolute;
+    left: 20px;
+    margin: 0;
+}
+h2.left-paragraph {
+    position: absolute;
+    left: 20px;
+    margin: 0;
+}
+
+p.left-paragraph:nth-child(2) {
+    top: 250px;
+}
+h2.left-paragraph:nth-child(2) {
+    top: 250px;
+}
+
+p.left-paragraph:nth-child(3) {
+    top: 300px;
+}
+
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Buttons */
+button {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Move Home Button to Top Left */
+.top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Move Buttons in Index.html to Top Right */
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Page-specific Styles */
+#Resume button {
+    margin-top: 20px;
+}
+
+#CodingPlatforms button {
+    margin-top: 10px;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
