@@ -125,3 +125,53 @@ button {
         padding: 8px 16px;
     }
 }
+/* Styling for the image below the buttons */
+.image-container {
+    position: absolute;
+    top: 200px; /* Adjust based on your layout */
+    right: 70px; /* Align with the right buttons */
+    text-align: center;
+
+    /* margin-top: 20px; */
+    /* margin-bottom: 40px; //Adds space between image and line */
+    /* text-align: center; */
+}
+
+.profile-image {
+    width: 300px; /* Medium size */
+    height: auto;
+    border-radius: 10px; /* Add a subtle round edge */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+/* Horizontal line styling */
+.divider-line {
+    /* width: 99%; */
+    /* margin: 0 auto 40px auto; Ensures it's spaced below the image */
+
+    /* margin: 1000px auto;
+    border: none;
+    border-top: 2px solid #ddd; */
+
+
+    width: 99%;
+    margin: 0 auto 20px auto; /* Reduced space between line and content box */
+    border: none;
+    border-top: 2px solid #ddd;
+}
+
+/* Box styling for the content below the line */
+.content-box {
+    background-color: #f0f8ff; /* Light blue box */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 1.8;
+    font-size: 1.1em;
+    color: #333;
+}
+
+
