@@ -5,6 +5,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script>
+        function openpdf(){
+            window.open("https://drive.google.com/file/d/1cNeIAmrqTBhycYRcP-V_oYCC6y_AI-O3/view?usp=sharing","_blank");
+        }
+    </script>
 </head>
 <body>
     <center>
@@ -12,31 +17,39 @@
         <h2 class="left-paragraph"><strong>Welcome to the my portfolio</strong></h2>
         <p class="left-paragraph">I'm a passionate student on web development and mobile app developments <br> Currently ,I am pursuing my engineering degree in RMK Engineering College.</p>
         <div class="top-right">
-        <a href="index.html"><button>Home</button></a>
-        <a href="Resume.html"><button>Resume</button></a>
+        <!-- <a href="index.html"><button>Home</button></a> -->
+        <!-- <a href="Resume.html"><button>Resume</button></a> -->
+        <button onclick="openpdf()">Resume</button>
         <a href="Project.html"><button>Project</button></a>
         <a href="Codingplatforms.html"><button>Coding platforms</button></a>
+        <a href="Contactme.html"><button>Contact me</button></a>
         </div>
         <div class="image-container">
             <img src="your-image.jpg" alt="My Portfolio Image" class="profile-image" />
         </div>
 
-                <!-- Horizontal line for separation -->
-            
-                <hr class="divider-line">
-        
-                <!-- Box with content below the line -->
-                <div class="content-box">
-                    <p>
-                        Hello! My name is Sachin, and I am an enthusiastic web developer and mobile application developer. 
-                        I have a deep passion for technology and design, constantly exploring ways to create impactful digital solutions.
-                        Currently, I am pursuing my engineering degree at RMK Engineering College, where I am honing my skills in programming, 
-                        problem-solving. My portfolio showcases my journey and projects, highlighting my dedication 
-                        to learning and growing in the ever-evolving tech landscape. 
-                        I am excited to bring creativity and innovation to every project I work on. Let's connect and create something amazing together!
-                    </p>
-                </div>
+        <!-- Box with content below the line -->
+        <div class="content-box">
+            <p>
+                Hello! My name is Sachin, and I am an enthusiastic web developer and mobile application developer. 
+                I have a deep passion for technology and design, constantly exploring ways to create impactful digital solutions.
+                Currently, I am pursuing my engineering degree at RMK Engineering College, where I am honing my skills in programming, 
+                problem-solving. My portfolio showcases my journey and projects, highlighting my dedication 
+                to learning and growing in the ever-evolving tech landscape. 
+                I am excited to bring creativity and innovation to every project I work on. Let's connect and create something amazing together!
+            </p>
+        </div>
         <!-- <p><a href="about.php">About</a></p> -->
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>Email: sach22085.it@rmkec.ac.in</p>
+                <p>Phone: +919080609580</p>
+                <p>&copy; 2025 Portfolio. All rights reserved.</p>
+            </div>
+        </footer>
     </center>
     
+</body>
 </html>

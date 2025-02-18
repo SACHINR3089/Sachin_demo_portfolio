@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #ffe4e1; /* Light pink color */
     color: #333;
     line-height: 1.6;
 }
@@ -33,12 +33,12 @@ p {
 
 p.left-paragraph {
     position: absolute;
-    left: 20px;
+    left: 70px;
     margin: 0;
 }
 h2.left-paragraph {
     position: absolute;
-    left: 20px;
+    left: 70px;
     margin: 0;
 }
 
@@ -128,13 +128,10 @@ button {
 /* Styling for the image below the buttons */
 .image-container {
     position: absolute;
-    top: 200px; /* Adjust based on your layout */
-    right: 70px; /* Align with the right buttons */
+    top: 120px; /* Move the image a bit lower */
+    right: 100px; /* Move the image slightly to the left */
     text-align: center;
-
-    /* margin-top: 20px; */
-    /* margin-bottom: 40px; //Adds space between image and line */
-    /* text-align: center; */
+    margin-bottom: 300px;
 }
 
 .profile-image {
@@ -143,35 +140,117 @@ button {
     border-radius: 10px; /* Add a subtle round edge */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
-/* Horizontal line styling */
-.divider-line {
-    /* width: 99%; */
-    /* margin: 0 auto 40px auto; Ensures it's spaced below the image */
-
-    /* margin: 1000px auto;
-    border: none;
-    border-top: 2px solid #ddd; */
-
-
-    width: 99%;
-    margin: 0 auto 20px auto; /* Reduced space between line and content box */
-    border: none;
-    border-top: 2px solid #ddd;
-}
-
-/* Box styling for the content below the line */
+/* Box styling for the content below the image */
 .content-box {
     background-color: #f0f8ff; /* Light blue box */
-    border: 1px solid #ccc; /* Subtle border */
+    border: 2px solid #0056b3; /* Thicker, darker blue border */
     border-radius: 10px;
     padding: 20px;
     width: 80%;
-    margin: 20px auto;
+    margin: 0 auto;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     line-height: 1.8;
     font-size: 1.1em;
     color: #333;
+    position: relative;
+    top: 550px; /* Move the box a bit further down */
+}
+
+/* Adjust the position of the text content */
+.left-paragraph, .top-left-title {
+    position: relative;
+    margin: 20px 0;
+    top: 0;
+    left: 40px; /* Move the text slightly to the right */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .content-box {
+        width: 90%;
+    }
+}
+
+/* Footer styling */
+.footer {
+    background-color: #000; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    top: 600px; /* Adjust based on your layout */
+    width: 100%;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+/* Project container styling */
+.project-container {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 3px solid #0056b3; /* Thicker blue border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 40px auto; /* Center the container with more margin */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Platform container styling */
+.platform-container {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 3px solid #0056b3; /* Thicker blue border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto; /* Center the container with more margin */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Contact form container styling */
+.contact-container {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 3px solid #0056b3; /* Thicker blue border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%; /* Reduce the width of the container */
+    margin: 40px auto; /* Center the container with more margin */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contact-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-container input, .contact-container textarea {
+    width: 95%; /* Ensure consistent width with input fields */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Make the button a block element */
+    margin: 0 auto; /* Center the button */
+}
+
+.contact-container button:hover {
+    background-color: #0056b3;
 }
 
 
